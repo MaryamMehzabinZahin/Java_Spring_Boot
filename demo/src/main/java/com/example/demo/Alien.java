@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -9,6 +10,8 @@ public class Alien {
 		private int aid;
 		private String aname;
 		private String tech;
+		@Autowired
+		private Laptop laptop;
 		public int getAid() {
 			return aid;
 		}
@@ -36,6 +39,7 @@ public class Alien {
 		public void show()
 		{
 			System.out.println("in show");
+			laptop.compile();
 		}
 		
 }

@@ -7,10 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+i love myself
 </body>
 </html>
 
 
-
-localhost::8080/home
